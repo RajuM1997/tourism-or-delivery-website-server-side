@@ -61,6 +61,7 @@ async function run() {
     app.get("/order", async (req, res) => {
       const result = await orderCollection.find({}).toArray();
       res.send(result);
+      // console.log(result);
     });
 
     //DELETE THE ORDER API
