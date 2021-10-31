@@ -38,7 +38,7 @@ async function run() {
     app.get("/package", async (req, res) => {
       const result = await packageCollection.find({}).toArray();
       res.send(result);
-      console.log(result);
+      // console.log(result);
     });
 
     //CREATE A DYNMICE API
